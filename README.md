@@ -21,7 +21,7 @@ FLASK/
 ## Screenshots
 
 **Application Interface**  
-![Frontend Interface](animia_front.png)
+<img  src="animia_front.png" alt="Fronted images" width=500px>
 
 **System Architecture**  
 ![Backend Structure](Backend.png)
