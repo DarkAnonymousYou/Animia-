@@ -24,8 +24,7 @@ FLASK/
 <img  src="animia_front.png" alt="Fronted images" width=500px>
 
 **System Architecture**  
-![Backend Structure](Backend.png)
-
+<img  src="Backend.png" alt=" Backed images" width=500px>
 ## Technology Stack
 
 - **Application Framework:** Flask (Python)
