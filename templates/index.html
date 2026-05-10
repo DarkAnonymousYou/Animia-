@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anemia Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Anemia Prediction</h2>
+        <form id="predictionForm" action="{{ url_for('predict') }}" method="post">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+
+            <label for="hemoglobin">Hemoglobin:</label>
+            <input type="number" name="hemoglobin" id="hemoglobin" step="0.1" required>
+
+            <label for="mch">Mean corpuscular hemoglobin (MCH):</label>
+            <input type="number" name="mch" id="mch" step="0.1" required>
+
+            <label for="mchc">Mean corpuscular hemoglobin concentration (MCHC):</label>
+            <input type="number" name="mchc" id="mchc" step="0.1" required>
+
+            <label for="mcv">Mean corpuscular volume (MCV):</label>
+            <input type="number" name ="mcv" id="mcv" step="0.1" required>
+
+            <button type="submit">Predict</button>
+        </form>
+</body>
+</html>
